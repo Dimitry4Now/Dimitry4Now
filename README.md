@@ -1,5 +1,3 @@
-# Dimitar Betinski
-
 ## About Me
 
 ### Hi there 👋
