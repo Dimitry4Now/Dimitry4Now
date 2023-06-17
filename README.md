@@ -28,8 +28,6 @@ Working on a national healthcare application sponsored by the **Ministry of Heal
 ## Contact
 
 - Email: **dimitarbetinski@gmail.com**
-- LinkedIn: [**Dimitar Betinski**](https://www.linkedin.com/in/dimitar-betinski-12b29b1b9/)
-- GitHub: [**Dimitry4Now**](https://github.com/Dimitry4Now)
 
 | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=dimitry4now&show_icons=true&include_all_commits=true&theme=transparent&hide_border=true&rank_icon=github" alt="Dimitar's github stats" /></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dimitry4now&layout=compact&theme=transparent&hide_border=true" /></a> |
 | ------------- | ------------- |
