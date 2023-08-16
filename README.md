@@ -4,7 +4,7 @@
 
 I am a student from the Faculty of Computer Science and Engineering in Skopje. Passionate about technology in general. IoT devices, robots, PLCs, computers... 
 
-🤖 Started my carrer as automation technician. 🤖
+🤖 Started my career as automation technician. 🤖
 🖮 Currently working as software developer. 🖱️
 
 ## Skills
