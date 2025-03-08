@@ -23,7 +23,7 @@ I had a great honor to work with amazing people and get an amazing skillset. I w
 ### Software developer
 **Sorsix** | **Skopje** | 2023-04-01 - Present
 
-Working on a national healthcare application sponsored by the **Ministry of Healthcare** called **MojTermin** as well as the national platform for education called **E-Dnevnik**. Main technologies used are Java 8 alongside with Tapestry 5.3.8 framework as well as HTML, CSS, Javascript. Started as a part of the support team, continued as fullstack developer.
+Working on a national healthcare application financed by the **Ministry of Healthcare** called **MojTermin** as well as the national platform for education called **E-Dnevnik** that is financed by the **Ministry of Education and Science**. Main technologies used are Java 8 alongside with Tapestry 5.3.8 framework as well as HTML, CSS, Javascript. Started as a part of the support team, continued as fullstack developer.
 
 Recently started working on a backend(API) for the mobile application **EDnevnik** that is written in Kotlin.
 
