@@ -18,14 +18,16 @@ I am a student from the Faculty of Computer Science and Engineering in Skopje. P
 ### Automation technician
 **DURA Automotive LLC** | **Skopje** | 2022-04-01 - 2023-03-31
 
-I had a great honor to work with amazing people and get an amazing skillset. I worked as a part of the maintenace team. Learned bunch of stuff and got various skills. I had the opportunity to work with ABB robots, Siemens PLCs and lots of top tier machines, starting from CNCs, welding applications, glueing, sealing, deburring. Having the freedom to explore the limits of each of those machines, and learn the way that those behave was an amazing experience.
+I had the privilege of working with a talented team, where I developed a diverse skill set. As part of the maintenance team, I gained hands-on experience with advanced technologies, including ABB robots, Siemens PLCs, and a variety of top-tier machines such as CNCs, welding applications, and systems for gluing, sealing, and deburring. This role allowed me the opportunity to explore the capabilities and behaviors of each machine, providing valuable insights into industrial automation and machine maintenance.
 
 ### Software developer
 **Sorsix** | **Skopje** | 2023-04-01 - Present
 
-Working on a national healthcare application financed by the **Ministry of Healthcare** called **MojTermin** as well as the national platform for education called **E-Dnevnik** that is financed by the **Ministry of Education and Science**. Main technologies used are Java 8 with Tapestry 5.3.8 framework as well as HTML, CSS, Javascript. Started as a part of the support team, continued as fullstack developer.
+Currently working on the national healthcare and education systems, focusing on the development and support of features and handling support tickets. Key responsibilities include:
 
-Recently started working on a backend(API) for the mobile application **EDnevnik** that is written in Kotlin.
+- Developing new features and enhancements for the national healthcare system using Java 8 and Apache Tapestry 5.3.8.
+- Supporting and troubleshooting existing features within both the healthcare and education systems. 
+- Recently began working on a backend API for a mobile application using Kotlin.
 
 ## Contact
 
