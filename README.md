@@ -2,7 +2,14 @@
 
 ### Hi there 👋
 
-I am a student from the Faculty of Computer Science and Engineering in Skopje. Passionate about technology in general. IoT devices, robots, PLCs, computers... 
+**Student Major: Informatics and Computer Science Engineering**
+Faculty of Information Sciences and Computer Engineering, Skopje
+
+As a student at FISCE, I have gained a strong foundation in software development, exploring structural programming concepts through languages such as C, C++, Java, and Python. I have also acquired skills in web development, including HTML, CSS, JavaScript, and JQuery. Additionally, I am familiar with the JUnit testing framework and Selenium WebDriver.
+
+I completed a month-long course on Ladder Logic in Mitsubishi's GXWorks, expanding my knowledge of industrial automation.
+
+In my current role, I have had the opportunity to work with the Apache Tapestry framework (version 5.3.8) and Kotlin. For issue tracking and backlog management, I utilize a local Redmine instance, while version control is handled through a local GitLab instance.
 
 🤖 Started my career as automation technician. 🤖
 🖮 Currently working as software developer. 🖱️
