@@ -34,7 +34,7 @@ Currently working on the national healthcare and education systems, focusing on 
 
 - Developing new features and enhancements for the national healthcare system using Java 8 and Apache Tapestry 5.3.8.
 - Supporting and troubleshooting existing features within both the healthcare and education systems. 
-- Recently began working on a backend API for a mobile application using Kotlin.
+- Contributing to the development and expansion of a backend API written in Kotlin, seamlessly integrating with a multiplatform mobile application built with Ionic and Angular.
 
 ## Contact
 
