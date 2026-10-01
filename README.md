@@ -6,7 +6,7 @@
 
 <div align="center">
 
-Skopje, North Macedonia \| [072-739-305](tel:+38972739305) \| <dimitarbetinski@gmail.com> \| [linkedin.com/in/dimitarbetinski](https://linkedin.com/in/dimitarbetinski)
+Skopje, North Macedonia \| [+389 72 739 305](tel:+38972739305) \| <dimitarbetinski@gmail.com> \| [linkedin.com/in/dimitarbetinski](https://linkedin.com/in/dimitarbetinski)
 
 </div>
 
@@ -99,13 +99,13 @@ Full-stack software developer with hands-on experience building and maintaining 
 
 -  Pixel-faithful recreation of the VW Digifiz digital instrument cluster, driven by live sensor data on a Raspberry Pi; rebuilt from a fork around a data-source abstraction, resolution-independent rendering, and a test suite.
 
-### Smart-Home \| *Arduino (C/C++), MIT App Inventor, Bluetooth* [\[link\]](https://github.com/Dimitry4Now/Smart-Home)
-
--  Two-person university project: Arduino Uno home model controlled by an Android app over an HC-05 Bluetooth link, with per-room lights and PWM dimming, RGB lighting, an I2C LCD status display, and light (LDR) and ultrasonic distance sensor automations.
-
 ### CV as Code \| *LaTeX, Pandoc, Lua, GitHub Actions* [\[link\]](https://github.com/Dimitry4Now/Dimitry4Now)
 
 -  Single-source CV kept in one LaTeX file: on every push, a GitHub Actions pipeline compiles the PDF, converts the CV to Markdown through Pandoc and a custom Lua filter, assembles it into the GitHub profile README, and commits both back to the repository.
+
+### Smart-Home \| *Arduino (C/C++), MIT App Inventor, Bluetooth* [\[link\]](https://github.com/Dimitry4Now/Smart-Home)
+
+-  Two-person university project: Arduino Uno home model controlled by an Android app over an HC-05 Bluetooth link, with per-room lights and PWM dimming, RGB lighting, an I2C LCD status display, and light (LDR) and ultrasonic distance sensor automations.
 
 ### scripts \| *Bash* [\[link\]](https://github.com/Dimitry4Now/scripts)
 
