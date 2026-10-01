@@ -4,10 +4,6 @@
   <img src="https://img.shields.io/badge/Currently%3A-Fullstack_Software_Developer-crimson?logo=apache&logoColor=violet&style=for-the-badge" alt="Currently Fullstack Software Developer" />
 </p>
 
-**Dimitar Betinski**  
-Fullstack Software Developer  
-<dimitarbetinski@gmail.com>  \|  [github.com/Dimitry4Now](https://github.com/Dimitry4Now)
-
 ## About Me
 
 ### Hi there
