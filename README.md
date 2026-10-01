@@ -4,7 +4,11 @@
   <img src="https://img.shields.io/badge/Currently%3A-Fullstack_Software_Developer-crimson?logo=apache&logoColor=violet&style=for-the-badge" alt="Currently Fullstack Software Developer" />
 </p>
 
-Skopje, North Macedonia \| [072-739-305](tel:+38972739305) \| <dimitarbetinski@gmail.com> \| [linkedin.com/in/dimitarbetinski](https://linkedin.com/in/dimitarbetinski) \| [github.com/Dimitry4Now](https://github.com/Dimitry4Now)
+<div align="center">
+
+Skopje, North Macedonia \| [072-739-305](tel:+38972739305) \| <dimitarbetinski@gmail.com> \| [linkedin.com/in/dimitarbetinski](https://linkedin.com/in/dimitarbetinski)
+
+</div>
 
 Full-stack software developer with hands-on experience building and maintaining national healthcare systems using Java, Kotlin, Apache Tapestry, and Angular/Ionic, including backends serving mobile applications with hundreds of thousands of active users. Comfortable owning a feature end to end, from backend API design through production support and troubleshooting. Brings a background in industrial automation and PLC programming, adding a practical, systems-level way of thinking to software problems. Outside work, interested in low-level programming and embedded hardware, building Arduino-based projects such as a hobby CNC machine and a smart home system. A dependable teammate who picks up new tools quickly and cares about writing code that holds up in production.
 
@@ -29,6 +33,8 @@ Full-stack software developer with hands-on experience building and maintaining 
 -  Set up **PM2**-managed Node.js runtimes to deploy **Next.js** marketing websites, including [sorsix.com](https://www.sorsix.com) and [whxray.com](https://whxray.com), as well as CRM-driven marketing sites for healthcare providers integrated with **Microsoft Entra ID** for authentication.
 
 -  Configured Node.js environments and **GitLab CI runners** to run automated tests for the marketing website projects.
+
+-  Handle analytics, tracking, and optimization for the marketing websites: set up **LinkedIn Ads** conversion tracking, manage tags and events through **Google Tag Manager**, monitor traffic and user behavior in **Google Analytics** and **Firebase**, and improve **SEO** and page performance using **Lighthouse** and **PageSpeed Insights**.
 
 -  Integrate **laboratory analyzers** with the healthcare information system; for an oncology laboratory, mapped results from **Sysmex XN-series**, **Maglumi X8**, and **Abbott Architect** instruments, and built retrieval of result images from Sysmex analyzers **from scratch**.
 
