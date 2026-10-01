@@ -47,9 +47,12 @@ jobs:
           {
             cat templates/header.md
             echo
-            echo '[![Download CV](https://img.shields.io/badge/Download-CV_PDF-red?style=for-the-badge&logo=adobeacrobatreader)](./cv.pdf)'
-            echo
             cat cv.md
+            echo
+            # Markdown can't center content, so the badge is wrapped in HTML.
+            echo '<p align="center">'
+            echo '  <a href="./cv.pdf"><img src="https://img.shields.io/badge/Download-CV_PDF-red?style=for-the-badge&logo=adobeacrobatreader" alt="Download CV" /></a>'
+            echo '</p>'
             echo
             cat templates/stats.md
           } > README.md
