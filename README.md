@@ -4,8 +4,6 @@
   <img src="https://img.shields.io/badge/Currently%3A-Fullstack_Software_Developer-crimson?logo=apache&logoColor=violet&style=for-the-badge" alt="Currently Fullstack Software Developer" />
 </p>
 
-[![Download CV](https://img.shields.io/badge/Download-CV_PDF-red?style=for-the-badge&logo=adobeacrobatreader)](./cv.pdf)
-
 **Dimitar Betinski**  
 Fullstack Software Developer  
 <dimitarbetinski@gmail.com>  \|  [github.com/Dimitry4Now](https://github.com/Dimitry4Now)
@@ -58,6 +56,10 @@ I had the privilege of working with a talented team, where I developed a diverse
 - Email: [**dimitarbetinski@gmail.com**](mailto:dimitarbetinski@gmail.com)
 
 - GitHub: [Dimitry4Now](https://github.com/Dimitry4Now)
+
+<p align="center">
+  <a href="./cv.pdf"><img src="https://img.shields.io/badge/Download-CV_PDF-red?style=for-the-badge&logo=adobeacrobatreader" alt="Download CV" /></a>
+</p>
 
 | <a href="https://github.com/stats-organization/github-stats-extended"><img align="center" src="https://github-stats-extended.vercel.app/api?username=dimitry4now&show_icons=true&include_all_commits=true&theme=transparent&hide_border=true&rank_icon=github" alt="Dimitar's github stats" /></a> | <a href="https://github.com/stats-organization/github-stats-extended"><img align="center" src="https://github-stats-extended.vercel.app/api/top-langs/?username=dimitry4now&layout=compact&theme=transparent&hide_border=true" /></a> |
 | ------------- | ------------- |
