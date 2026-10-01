@@ -1,82 +1,209 @@
-\documentclass[11pt,a4paper]{article}
+%-------------------------
+% Resume in LaTeX
+% Based on the popular "Jake's Resume" template structure.
+% Compile with: pdflatex cv.tex
+%-------------------------
 
-\usepackage[utf8]{inputenc}
+\documentclass[letterpaper,11pt]{article}
+
 \usepackage[T1]{fontenc}
-\usepackage[margin=2cm]{geometry}
-\usepackage{enumitem}
+\usepackage{XCharter}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
 \usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
-\setlist[itemize]{leftmargin=*, itemsep=2pt}
-\titleformat{\section}{\Large\bfseries}{}{0pt}{}[\titlerule]
-\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% Custom CV macros. scripts/clean_cv.lua translates these for the README.
-\newcommand{\cvsection}[1]{\section*{#1}}
-\newcommand{\cvlink}[2]{\href{#1}{#2}}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
 
-\pagestyle{empty}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine readable / ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
 
 \begin{document}
 
+%----------HEADING----------
 \begin{center}
-  {\huge\bfseries Dimitar Betinski}\\[4pt]
-  Fullstack Software Developer\\[2pt]
-  \cvlink{mailto:dimitarbetinski@gmail.com}{dimitarbetinski@gmail.com}
-  \,|\,
-  \cvlink{https://github.com/Dimitry4Now}{github.com/Dimitry4Now}
+    \textbf{\Huge \scshape Dimitar Betinski} \\ \vspace{1pt}
+    \small Skopje, North Macedonia $|$ \href{tel:+38972739305}{072-739-305} $|$
+    \href{mailto:dimitarbetinski@gmail.com}{dimitarbetinski@gmail.com} $|$
+    \href{https://linkedin.com/in/dimitarbetinski}{linkedin.com/in/dimitarbetinski} $|$
+    \href{https://github.com/Dimitry4Now}{github.com/Dimitry4Now}
 \end{center}
 
-\vspace{6pt}
+%-----------SUMMARY-----------
+\small{Full-stack software developer with hands-on experience building and maintaining national healthcare systems using Java, Kotlin, Apache Tapestry, and Angular/Ionic, including backends serving mobile applications with hundreds of thousands of active users. Comfortable owning a feature end to end, from backend API design through production support and troubleshooting. Brings a background in industrial automation and PLC programming, adding a practical, systems-level way of thinking to software problems. Outside work, interested in low-level programming and embedded hardware, building Arduino-based projects such as a hobby CNC machine and a smart home system. A dependable teammate who picks up new tools quickly and cares about writing code that holds up in production.}
 
-\cvsection{About Me}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
 
-\subsection*{Hi there}
+    \resumeSubheading
+      {Full-Stack Software Developer}{}
+      {Sorsix, Skopje}{04/2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Develop and maintain features for the \textbf{national healthcare and education systems}, using \textbf{Java 8} and \textbf{Apache Tapestry 5.3.8} to build and enhance functionality relied on by public-sector end users.}
+        \resumeItem{Support and troubleshoot existing production features across both the healthcare and education systems, handling \textbf{support tickets} and resolving issues via a local \textbf{Redmine} instance.}
+        \resumeItem{Contribute to and expand a \textbf{backend API written in Kotlin}, integrating it with a \textbf{multiplatform mobile application} built with \textbf{Ionic} and \textbf{Angular}.}
+        \resumeItem{Built \textbf{Kotlin backends from scratch} for two national healthcare mobile applications: \textbf{IzabraniDoktor} (Serbia's national health system app, \textbf{200k+ active users}) and \textbf{MoeZdravje} (North Macedonia's national healthcare app, \textbf{$\sim$35k users}).}
+        \resumeItem{Manage version control through a local \textbf{GitLab} instance, collaborating with the team on code changes and releases.}
+        \resumeItem{Provision and configure \textbf{Linux} environments (alpha and production) from scratch on VMs handed off by the infrastructure team, setting them up end-to-end to deploy \textbf{Java} and \textbf{Kotlin} applications, including \textbf{Nginx} configuration as a reverse proxy and web server.}
+        \resumeItem{Set up \textbf{PM2}-managed Node.js runtimes to deploy \textbf{Next.js} marketing websites, including \href{https://www.sorsix.com}{sorsix.com} and \href{https://whxray.com}{whxray.com}, as well as CRM-driven marketing sites for healthcare providers integrated with \textbf{Microsoft Entra ID} for authentication.}
+        \resumeItem{Configured Node.js environments and \textbf{GitLab CI runners} to run automated tests for the marketing website projects.}
+        \resumeItem{Integrate \textbf{laboratory analyzers} with the healthcare information system; for an oncology laboratory, mapped results from \textbf{Sysmex XN-series}, \textbf{Maglumi X8}, and \textbf{Abbott Architect} instruments, and built retrieval of result images from Sysmex analyzers \textbf{from scratch}.}
+      \resumeItemListEnd
 
-\textbf{Student Major: Informatics and Computer Science Engineering}\\
-Faculty of Information Sciences and Computer Engineering, Skopje
+    \resumeSubheading
+      {Robot/PLC Technician}{}
+      {DURA Automotive LLC}{04/2022 -- 03/2023}
+      \resumeItemListStart
+        \resumeItem{Maintained and troubleshot \textbf{ABB robots} and \textbf{Siemens PLCs} as part of the plant maintenance team, keeping production lines running with minimal downtime.}
+        \resumeItem{Worked hands-on with top-tier production machinery including \textbf{CNCs}, welding stations, and systems for gluing, sealing, and deburring.}
+        \resumeItem{Planned, designed, and implemented a new feature on an existing \textbf{robotic final-packing cell}: extended it from placing parts into boxes to full \textbf{lid handling} (opening, buffering, closing), designing the mechanical fixtures, \textbf{pneumatics}, and \textbf{electrics}, then installing and programming the solution.}
+        \resumeItem{Diagnosed machine behavior and fault conditions across diverse equipment, building practical knowledge of \textbf{industrial automation} and preventive maintenance.}
+      \resumeItemListEnd
 
-As a student at FISCE, I have gained a strong foundation in software development, exploring structural programming concepts through languages such as C, C++, Java, and Python. I have also acquired skills in web development, including HTML, CSS, JavaScript, and JQuery. Additionally, I am familiar with the JUnit testing framework and Selenium WebDriver.
+    \resumeSubheading
+      {PLC Programmer}{}
+      {AIM Professionals}{10/2021 -- 03/2022}
+      \resumeItemListStart
+        \resumeItem{Programmed and configured \textbf{ABB robots} and \textbf{Siemens PLCs} for industrial automation tasks.}
+      \resumeItemListEnd
 
-I completed a month-long course on Ladder Logic in Mitsubishi's GXWorks, expanding my knowledge of industrial automation.
+    \resumeSubheading
+      {Robotics and Mechatronics Intern}{}
+      {Sorsix \& AIM Professionals}{08/2021 -- 10/2021}
+      \resumeItemListStart
+        \resumeItem{Completed a course at the Faculty of Electrical Engineering focused on \textbf{Mitsubishi PLCs} and \textbf{Ladder Logic}.}
+        \resumeItem{Gained hands-on experience programming in \textbf{Mitsubishi GX Works} and running simulations in \textbf{FactoryIO}, building a foundation in PLC-based control systems.}
+      \resumeItemListEnd
 
-In my current role, I have had the opportunity to work with the Apache Tapestry framework (version 5.3.8) and Kotlin. For issue tracking and backlog management, I utilize a local Redmine instance, while version control is handled through a local GitLab instance.
+  \resumeSubHeadingListEnd
 
-Started my career as automation technician. Currently working as software developer.
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Kotlin, JavaScript, C, C++, Python, SQL} \\
+     \textbf{Backend}{: Apache Tapestry, REST APIs} \\
+     \textbf{Frontend}{: Angular, Ionic, HTML5, CSS3, jQuery} \\
+     \textbf{Databases}{: PostgreSQL} \\
+     \textbf{Testing}{: JUnit, Selenium WebDriver} \\
+     \textbf{Industrial Automation}{: Mitsubishi PLC (Ladder Logic, GX Works), FactoryIO, ABB robots, Siemens PLCs, pneumatics} \\
+     \textbf{DevOps \& Tools}{: Linux, Nginx, PM2, GitLab CI, Git, Redmine} \\
+     \textbf{Languages Spoken}{: Macedonian (native), English (fluent)} \\
+    }}
+ \end{itemize}
 
-\cvsection{Skills}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Faculty of Information Sciences and Computer Engineering, Skopje}{2017 -- Present}
+      {Informatics and Computer Science Engineering}{}
+    \resumeSubheading
+      {Semos Education, Skopje}{Aug -- Oct 2021}
+      {Advanced Microsoft Office Excel Course}{}
+  \resumeSubHeadingListEnd
 
-\begin{itemize}
-  \item \textbf{Programming Languages:} Java, Rapid, C++, C, Python, Typescript/Javascript
-  \item \textbf{Frameworks and Libraries:} Spring Boot, Tapestry, Angular, Hibernate, Bootstrap
-  \item \textbf{Tools and Technologies:} Git (obviously), Docker, PostgreSQL, RobotStudio, Siemens TIA Portal
-\end{itemize}
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Hant Tracker} $|$ \emph{Angular, TypeScript, Spring Boot, Java 21, JPA, PostgreSQL} \href{https://github.com/Dimitry4Now/hant-tracker}{[link]}}{}
+          \resumeItemListStart
+            \resumeItem{Full-stack app that records a weekly card game played on paper: round-by-round score entry, personal dashboards, all-time leaderboard, game replay analysis, and money settlement between players, with JWT auth, admin-approved accounts, and dedicated mobile layouts.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{sshhub} $|$ \emph{Go, Bubble Tea, Wish, SQLite} \href{https://github.com/Dimitry4Now/sshhub}{[link]}}{}
+          \resumeItemListStart
+            \resumeItem{Multi-user terminal hangout served over SSH: live chat lobby with presence, trivia, snake, a meme gallery, and per-game leaderboards, with persisted profiles and selectable themes.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Digifiz Dash} $|$ \emph{Python, pygame, MQTT, Raspberry Pi} \href{https://github.com/Dimitry4Now/DIGIFIZ}{[link]}}{}
+          \resumeItemListStart
+            \resumeItem{Pixel-faithful recreation of the VW Digifiz digital instrument cluster, driven by live sensor data on a Raspberry Pi; rebuilt from a fork around a data-source abstraction, resolution-independent rendering, and a test suite.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Smart-Home} $|$ \emph{Arduino (C/C++), MIT App Inventor, Bluetooth} \href{https://github.com/Dimitry4Now/Smart-Home}{[link]}}{}
+          \resumeItemListStart
+            \resumeItem{Two-person university project: Arduino Uno home model controlled by an Android app over an HC-05 Bluetooth link, with per-room lights and PWM dimming, RGB lighting, an I2C LCD status display, and light (LDR) and ultrasonic distance sensor automations.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{scripts} $|$ \emph{Bash} \href{https://github.com/Dimitry4Now/scripts}{[link]}}{}
+          \resumeItemListStart
+            \resumeItem{Portable Bash toolbox for Linux and macOS: git clone auditing and branch cleanup, live clone throughput monitoring, video and WebP media compression, port freeing, and remote terminfo fixes; safe by default with dry runs and argument validation.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
-\cvsection{Work Experience}
-
-\subsection*{Software developer}
-\textbf{Sorsix} | \textbf{Skopje} | 2023-04-01 -- Present
-
-Currently working on the national healthcare and education systems, focusing on the development and support of features and handling support tickets. Key responsibilities include:
-
-\begin{itemize}
-  \item Developing new features and enhancements for the national healthcare system using Java 8 and Apache Tapestry 5.3.8.
-  \item Supporting and troubleshooting existing features within both the healthcare and education systems.
-  \item Contributing to the development and expansion of a backend API written in Kotlin, seamlessly integrating with a multiplatform mobile application built with Ionic and Angular.
-\end{itemize}
-
-\vspace{4pt}
-
-\subsection*{Automation technician}
-\textbf{DURA Automotive LLC} | \textbf{Skopje} | 2022-04-01 -- 2023-03-31
-
-I had the privilege of working with a talented team, where I developed a diverse skill set. As part of the maintenance team, I gained hands-on experience with advanced technologies, including ABB robots, Siemens PLCs, and a variety of top-tier machines such as CNCs, welding applications, and systems for gluing, sealing, and deburring. This role allowed me the opportunity to explore the capabilities and behaviors of each machine, providing valuable insights into industrial automation and machine maintenance.
-
-\cvsection{Contact}
-
-\begin{itemize}
-  \item Email: \cvlink{mailto:dimitarbetinski@gmail.com}{\textbf{dimitarbetinski@gmail.com}}
-  \item GitHub: \href{https://github.com/Dimitry4Now}{Dimitry4Now}
-\end{itemize}
+%-----------CERTIFICATIONS-----------
+\section{Licenses and Certifications}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{Advanced Microsoft Office Excel -- \href{https://drive.google.com/file/d/1sbzKYrxYrFg47mFflyHJnI7G3LcS0s6V/view}{Verify}}{}
+    \resumeProjectHeading{Mitsubishi PLC (Ladder Logic, GX Works)}{}
+    \resumeProjectHeading{Driving licence, categories B and C}{}
+  \resumeSubHeadingListEnd
 
 \end{document}

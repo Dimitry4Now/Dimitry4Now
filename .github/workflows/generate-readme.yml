@@ -23,7 +23,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            texlive-latex-extra texlive-fonts-recommended pandoc
+            texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra pandoc
 
       - name: Compile cv.tex to cv.pdf
         # Run twice so hyperref resolves links and references.
@@ -32,11 +32,11 @@ jobs:
           pdflatex -interaction=nonstopmode -halt-on-error cv.tex
 
       - name: Convert cv.tex to Markdown
-        # raw_tex keeps custom macros as raw LaTeX; latex_macros is disabled so
-        # Pandoc does not expand them before clean_cv.lua can translate them.
+        # Pandoc expands the resume macros itself; clean_cv.lua then turns
+        # the resulting layout tables into headings.
         run: |
           pandoc cv.tex \
-            --from=latex+raw_tex-latex_macros \
+            --from=latex \
             --to=gfm \
             --wrap=none \
             --lua-filter=scripts/clean_cv.lua \
