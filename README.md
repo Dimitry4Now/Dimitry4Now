@@ -4,47 +4,60 @@
   <img src="https://img.shields.io/badge/Currently%3A-Fullstack_Software_Developer-crimson?logo=apache&logoColor=violet&style=for-the-badge" alt="Currently Fullstack Software Developer" />
 </p>
 
+[![Download CV](https://img.shields.io/badge/Download-CV_PDF-red?style=for-the-badge&logo=adobeacrobatreader)](./cv.pdf)
+
+**Dimitar Betinski**  
+Fullstack Software Developer  
+<dimitarbetinski@gmail.com>  \|  [github.com/Dimitry4Now](https://github.com/Dimitry4Now)
+
 ## About Me
 
-### Hi there 👋
+### Hi there
 
-**Student Major: Informatics and Computer Science Engineering**
+**Student Major: Informatics and Computer Science Engineering**  
 Faculty of Information Sciences and Computer Engineering, Skopje
 
 As a student at FISCE, I have gained a strong foundation in software development, exploring structural programming concepts through languages such as C, C++, Java, and Python. I have also acquired skills in web development, including HTML, CSS, JavaScript, and JQuery. Additionally, I am familiar with the JUnit testing framework and Selenium WebDriver.
 
-I completed a month-long course on Ladder Logic in Mitsubishi's GXWorks, expanding my knowledge of industrial automation.
+I completed a month-long course on Ladder Logic in Mitsubishi’s GXWorks, expanding my knowledge of industrial automation.
 
 In my current role, I have had the opportunity to work with the Apache Tapestry framework (version 5.3.8) and Kotlin. For issue tracking and backlog management, I utilize a local Redmine instance, while version control is handled through a local GitLab instance.
 
-🤖 Started my career as automation technician. 🤖
-🖮 Currently working as software developer. 🖱️
+Started my career as automation technician. Currently working as software developer.
 
 ## Skills
 
-- Programming Languages: Java, Rapid, C++, C, Python, Typescript/Javascript
-- Frameworks and Libraries: Spring Boot, Tapestry, Angular, Hibernate, Bootstrap
-- Tools and Technologies: Git(obviously), Docker, PostgreSQL, RobotStudio, Siemens TIA Portal
+- **Programming Languages:** Java, Rapid, C++, C, Python, Typescript/Javascript
+
+- **Frameworks and Libraries:** Spring Boot, Tapestry, Angular, Hibernate, Bootstrap
+
+- **Tools and Technologies:** Git (obviously), Docker, PostgreSQL, RobotStudio, Siemens TIA Portal
 
 ## Work Experience
 
-### Automation technician
-**DURA Automotive LLC** | **Skopje** | 2022-04-01 - 2023-03-31
-
-I had the privilege of working with a talented team, where I developed a diverse skill set. As part of the maintenance team, I gained hands-on experience with advanced technologies, including ABB robots, Siemens PLCs, and a variety of top-tier machines such as CNCs, welding applications, and systems for gluing, sealing, and deburring. This role allowed me the opportunity to explore the capabilities and behaviors of each machine, providing valuable insights into industrial automation and machine maintenance.
-
 ### Software developer
-**Sorsix** | **Skopje** | 2023-04-01 - Present
+
+**Sorsix** \| **Skopje** \| 2023-04-01 – Present
 
 Currently working on the national healthcare and education systems, focusing on the development and support of features and handling support tickets. Key responsibilities include:
 
 - Developing new features and enhancements for the national healthcare system using Java 8 and Apache Tapestry 5.3.8.
-- Supporting and troubleshooting existing features within both the healthcare and education systems. 
+
+- Supporting and troubleshooting existing features within both the healthcare and education systems.
+
 - Contributing to the development and expansion of a backend API written in Kotlin, seamlessly integrating with a multiplatform mobile application built with Ionic and Angular.
+
+### Automation technician
+
+**DURA Automotive LLC** \| **Skopje** \| 2022-04-01 – 2023-03-31
+
+I had the privilege of working with a talented team, where I developed a diverse skill set. As part of the maintenance team, I gained hands-on experience with advanced technologies, including ABB robots, Siemens PLCs, and a variety of top-tier machines such as CNCs, welding applications, and systems for gluing, sealing, and deburring. This role allowed me the opportunity to explore the capabilities and behaviors of each machine, providing valuable insights into industrial automation and machine maintenance.
 
 ## Contact
 
-- Email: **dimitarbetinski@gmail.com**
+- Email: [**dimitarbetinski@gmail.com**](mailto:dimitarbetinski@gmail.com)
+
+- GitHub: [Dimitry4Now](https://github.com/Dimitry4Now)
 
 | <a href="https://github.com/stats-organization/github-stats-extended"><img align="center" src="https://github-stats-extended.vercel.app/api?username=dimitry4now&show_icons=true&include_all_commits=true&theme=transparent&hide_border=true&rank_icon=github" alt="Dimitar's github stats" /></a> | <a href="https://github.com/stats-organization/github-stats-extended"><img align="center" src="https://github-stats-extended.vercel.app/api/top-langs/?username=dimitry4now&layout=compact&theme=transparent&hide_border=true" /></a> |
 | ------------- | ------------- |
