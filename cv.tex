@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\setlist[itemize]{leftmargin=*, itemsep=2pt}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+
+% Custom CV macros. scripts/clean_cv.lua translates these for the README.
+\newcommand{\cvsection}[1]{\section*{#1}}
+\newcommand{\cvlink}[2]{\href{#1}{#2}}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+  {\huge\bfseries Dimitar Betinski}\\[4pt]
+  Fullstack Software Developer\\[2pt]
+  \cvlink{mailto:dimitarbetinski@gmail.com}{dimitarbetinski@gmail.com}
+  \,|\,
+  \cvlink{https://github.com/Dimitry4Now}{github.com/Dimitry4Now}
+\end{center}
+
+\vspace{6pt}
+
+\cvsection{About Me}
+
+\subsection*{Hi there}
+
+\textbf{Student Major: Informatics and Computer Science Engineering}\\
+Faculty of Information Sciences and Computer Engineering, Skopje
+
+As a student at FISCE, I have gained a strong foundation in software development, exploring structural programming concepts through languages such as C, C++, Java, and Python. I have also acquired skills in web development, including HTML, CSS, JavaScript, and JQuery. Additionally, I am familiar with the JUnit testing framework and Selenium WebDriver.
+
+I completed a month-long course on Ladder Logic in Mitsubishi's GXWorks, expanding my knowledge of industrial automation.
+
+In my current role, I have had the opportunity to work with the Apache Tapestry framework (version 5.3.8) and Kotlin. For issue tracking and backlog management, I utilize a local Redmine instance, while version control is handled through a local GitLab instance.
+
+Started my career as automation technician. Currently working as software developer.
+
+\cvsection{Skills}
+
+\begin{itemize}
+  \item \textbf{Programming Languages:} Java, Rapid, C++, C, Python, Typescript/Javascript
+  \item \textbf{Frameworks and Libraries:} Spring Boot, Tapestry, Angular, Hibernate, Bootstrap
+  \item \textbf{Tools and Technologies:} Git (obviously), Docker, PostgreSQL, RobotStudio, Siemens TIA Portal
+\end{itemize}
+
+\cvsection{Work Experience}
+
+\subsection*{Software developer}
+\textbf{Sorsix} | \textbf{Skopje} | 2023-04-01 -- Present
+
+Currently working on the national healthcare and education systems, focusing on the development and support of features and handling support tickets. Key responsibilities include:
+
+\begin{itemize}
+  \item Developing new features and enhancements for the national healthcare system using Java 8 and Apache Tapestry 5.3.8.
+  \item Supporting and troubleshooting existing features within both the healthcare and education systems.
+  \item Contributing to the development and expansion of a backend API written in Kotlin, seamlessly integrating with a multiplatform mobile application built with Ionic and Angular.
+\end{itemize}
+
+\vspace{4pt}
+
+\subsection*{Automation technician}
+\textbf{DURA Automotive LLC} | \textbf{Skopje} | 2022-04-01 -- 2023-03-31
+
+I had the privilege of working with a talented team, where I developed a diverse skill set. As part of the maintenance team, I gained hands-on experience with advanced technologies, including ABB robots, Siemens PLCs, and a variety of top-tier machines such as CNCs, welding applications, and systems for gluing, sealing, and deburring. This role allowed me the opportunity to explore the capabilities and behaviors of each machine, providing valuable insights into industrial automation and machine maintenance.
+
+\cvsection{Contact}
+
+\begin{itemize}
+  \item Email: \cvlink{mailto:dimitarbetinski@gmail.com}{\textbf{dimitarbetinski@gmail.com}}
+  \item GitHub: \href{https://github.com/Dimitry4Now}{Dimitry4Now}
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,67 @@
+name: Generate README and CV PDF
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-readme
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install LaTeX and Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-extra texlive-fonts-recommended pandoc
+
+      - name: Compile cv.tex to cv.pdf
+        # Run twice so hyperref resolves links and references.
+        run: |
+          pdflatex -interaction=nonstopmode -halt-on-error cv.tex
+          pdflatex -interaction=nonstopmode -halt-on-error cv.tex
+
+      - name: Convert cv.tex to Markdown
+        # raw_tex keeps custom macros as raw LaTeX; latex_macros is disabled so
+        # Pandoc does not expand them before clean_cv.lua can translate them.
+        run: |
+          pandoc cv.tex \
+            --from=latex+raw_tex-latex_macros \
+            --to=gfm \
+            --wrap=none \
+            --lua-filter=scripts/clean_cv.lua \
+            --output=cv.md
+
+      - name: Assemble README.md
+        run: |
+          {
+            cat templates/header.md
+            echo
+            echo '[![Download CV](https://img.shields.io/badge/Download-CV_PDF-red?style=for-the-badge&logo=adobeacrobatreader)](./cv.pdf)'
+            echo
+            cat cv.md
+            echo
+            cat templates/stats.md
+          } > README.md
+
+      - name: Commit README.md and cv.pdf
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: regenerate README.md and cv.pdf from cv.tex"
+          file_pattern: README.md cv.pdf
+
+      - name: Upload cv.pdf artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv
+          path: cv.pdf
