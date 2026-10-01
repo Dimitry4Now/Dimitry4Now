@@ -153,6 +153,33 @@ local function split_lines(inlines)
   return out
 end
 
+-- Drop the GitHub link from a "|"-separated contact line; the README
+-- already lives on GitHub.
+local function without_github(inlines)
+  local parts, current = {}, pandoc.Inlines({})
+  for _, inl in ipairs(inlines) do
+    if inl.t == "Str" and inl.text == "|" then
+      table.insert(parts, trim(current))
+      current = pandoc.Inlines({})
+    else
+      current:insert(inl)
+    end
+  end
+  table.insert(parts, trim(current))
+
+  local kept = {}
+  for _, part in ipairs(parts) do
+    local is_github = false
+    part:walk({
+      Link = function(link)
+        if link.target:match("github%.com") then is_github = true end
+      end,
+    })
+    if not is_github then table.insert(kept, part) end
+  end
+  return join(kept, separator())
+end
+
 function Div(el)
   -- Centered title block: drop the name, keep the contact line.
   if el.classes:includes("center") then
@@ -161,7 +188,13 @@ function Div(el)
     local lines = split_lines(para.content)
     table.remove(lines, 1)
     if #lines == 0 then return {} end
-    return pandoc.Para(join(lines, { pandoc.Space() }))
+    local contact = without_github(join(lines, { pandoc.Space() }))
+    -- Markdown can't center content, so wrap the line in an HTML div.
+    return {
+      pandoc.RawBlock("html", '<div align="center">'),
+      pandoc.Para(contact),
+      pandoc.RawBlock("html", "</div>"),
+    }
   end
 
   -- Label-less itemize with \\-separated lines (Technical Skills).
