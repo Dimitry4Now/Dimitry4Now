@@ -103,6 +103,10 @@ Full-stack software developer with hands-on experience building and maintaining 
 
 -  Two-person university project: Arduino Uno home model controlled by an Android app over an HC-05 Bluetooth link, with per-room lights and PWM dimming, RGB lighting, an I2C LCD status display, and light (LDR) and ultrasonic distance sensor automations.
 
+### CV as Code \| *LaTeX, Pandoc, Lua, GitHub Actions* [\[link\]](https://github.com/Dimitry4Now/Dimitry4Now)
+
+-  Single-source CV kept in one LaTeX file: on every push, a GitHub Actions pipeline compiles the PDF, converts the CV to Markdown through Pandoc and a custom Lua filter, assembles it into the GitHub profile README, and commits both back to the repository.
+
 ### scripts \| *Bash* [\[link\]](https://github.com/Dimitry4Now/scripts)
 
 -  Portable Bash toolbox for Linux and macOS: git clone auditing and branch cleanup, live clone throughput monitoring, video and WebP media compression, port freeing, and remote terminfo fixes; safe by default with dry runs and argument validation.
