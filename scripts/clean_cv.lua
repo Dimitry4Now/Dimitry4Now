@@ -106,10 +106,11 @@ function Header(el)
   return el
 end
 
--- Unwrap layout-only environments (e.g. center) so GFM gets plain content.
+-- Drop the centered name/contact title block: it is PDF-only, the README
+-- already has a badge header and a Contact section.
 function Div(el)
   if el.classes:includes("center") then
-    return el.content
+    return {}
   end
   return nil
 end
