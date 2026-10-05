@@ -10,7 +10,7 @@ Skopje, North Macedonia \| [+389 72 739 305](tel:+38972739305) \| <dimitarbetins
 
 </div>
 
-Full-stack software developer with hands-on experience building and maintaining national healthcare systems using Java, Kotlin, Apache Tapestry, and Angular/Ionic, including backends serving mobile applications with hundreds of thousands of active users. Comfortable owning a feature end to end, from backend API design through production support and troubleshooting. Brings a background in industrial automation and PLC programming, adding a practical, systems-level way of thinking to software problems. Outside work, interested in low-level programming and embedded hardware, building Arduino-based projects such as a hobby CNC machine and a smart home system. A dependable teammate who picks up new tools quickly and cares about writing code that holds up in production.
+Full-stack software developer with hands-on experience building and maintaining national healthcare systems using Java, Kotlin, Spring Boot, Apache Tapestry, and Angular/Ionic, including backends serving mobile applications with hundreds of thousands of active users. Comfortable owning a feature end to end, from backend API design through production support and troubleshooting. Brings a background in industrial automation and PLC programming, adding a practical, systems-level way of thinking to software problems. Outside work, interested in low-level programming and embedded hardware, building Arduino-based projects such as a hobby CNC machine and a smart home system. A dependable teammate who picks up new tools quickly and cares about writing code that holds up in production.
 
 ## Experience
 
@@ -66,13 +66,13 @@ Full-stack software developer with hands-on experience building and maintaining 
 
 ## Technical Skills
 
-- **Languages**: Java, Kotlin, JavaScript, C, C++, Python, SQL
-- **Backend**: Apache Tapestry, REST APIs
+- **Languages**: Java, Kotlin, JavaScript, C, C++, Python, SQL, Bash
+- **Backend**: Spring Boot, Apache Tapestry, REST APIs
 - **Frontend**: Angular, Ionic, HTML5, CSS3, jQuery
 - **Databases**: PostgreSQL
 - **Testing**: JUnit, Selenium WebDriver
 - **Industrial Automation**: Mitsubishi PLC (Ladder Logic, GX Works), FactoryIO, ABB robots, Siemens PLCs, pneumatics
-- **DevOps & Tools**: Linux, Nginx, PM2, GitLab CI, Git, Redmine
+- **DevOps & Tools**: Linux, Docker, Nginx, PM2, GitLab CI, Git, Redmine
 - **Languages Spoken**: Macedonian (native), English (fluent)
 
 ## Education
