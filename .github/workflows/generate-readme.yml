@@ -47,6 +47,8 @@ jobs:
           {
             cat templates/header.md
             echo
+            cat templates/stack.md
+            echo
             cat cv.md
             echo
             # Markdown can't center content, so the badge is wrapped in HTML.
